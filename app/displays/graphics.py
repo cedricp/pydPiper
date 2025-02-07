@@ -7,8 +7,6 @@ import sys, math
 from PIL import Image
 from PIL import ImageDraw
 
-
-
 def invertbits(byte):
 	# Assumes 8 bit value
 	if byte < 0 | byte > 255:
@@ -183,34 +181,6 @@ def msgwidth(msg, fontpkg, varwidth=False):
 			clp += fx+1
 	retval.append(clp-1)
 	return retval
-
- # 	for c in msg:
- # 		if c == u'\n':
- # 			retval.append(clp-1)
- # 			clp = 0
- # 			continue
-	#
- # 		bytearray = copy.copy(fontpkg[ord(c)])
- # 		if varwidth and ord(c) != 0x20: # if variable width requested and char is not a space
- # 			try:
- # 				# Trim left
- # 				while bytearray[0] == 0:
- # 					del bytearray[0]
- # 				# Trim right
- # 				for i in range(len(bytearray)-1,0,-1):
- # 					if bytearray[i] == 0:
- # 						del bytearray[i]
- # 			except IndexError:
- # 				# bytearray for this character was empty
- # 				pass
-	#
- # 		for val in bytearray:
- # 			clp += 1
- # 		# Add pixel wide gap between characters
- # 		clp += 1
- # 	retval.append(clp-1)
-	#
- # 	return retval
 
 def line(image,x0, y0, x1, y1, color=1):
 	draw = ImageDraw.Draw(image)

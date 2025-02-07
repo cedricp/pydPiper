@@ -3,9 +3,10 @@ Description=LCD server for music player
 
 [Service]
 # Command to execute when the service is started
+ExecStartPre=/bin/sleep 30
 ExecStart=/usr/bin/python3 -m app.pydPiper
 WorkingDirectory=/home/volumio/pydPiper
 User=volumio
 
 [Install]
-WantedBy=multi-user.target
+WantedBy = multi-user.target

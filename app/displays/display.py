@@ -267,12 +267,6 @@ class widget:
 class gwidget(widget):
 
 	def update(self, reset=False):
-
-		# Moved change detection into widget
-#		if self.type in ['text', 'ttext']:
-#			if not self.changed(self.variables):
-#				return False
-
 		if self.type == 'text':
 			return self.text(self.formatstring, self.variables, self.fontpkg, self.varwidth, self.specifiedsize, self.just)
 		if self.type == 'ttext':
