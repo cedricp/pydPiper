@@ -144,9 +144,9 @@ class widget:
 			elif transform_request in [u'upper',u'capitalize',u'title',u'lower']:
 				# These all require string input
 
-				if type(retval) is str or type(retval) is unicode:
+				if type(retval) is str or type(retval) is str:
 					if type(retval) is str:
-						retval = retval.decode()
+						retval = retval
 					if transform_request == u'upper':
 						retval = retval.upper()
 					elif transform_request == u'capitalize':
@@ -175,7 +175,7 @@ class widget:
 
 					if len(tvalues) > 1:
 						# Safe to ignore but logging
-						logging.debug(u"Expected one parameter but received {0}".format(len(values)))
+						logging.debug(u"Expected one parameter but received {0}".format(len(tvalues)))
 
 					if len(tvalues) == 0:
 						# Requires at least one variable to specify line so will return error in retval
@@ -1639,7 +1639,7 @@ def processevent(events, starttime, prepost, db, dbp):
 if __name__ == '__main__':
 
 	import graphics as g
-	import moment
+	from . import moment
 
 	starttime = time.time()
 	elapsed = int(time.time()-starttime)

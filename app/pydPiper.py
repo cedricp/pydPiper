@@ -536,7 +536,7 @@ class music_controller(threading.Thread):
                 usedp = 0
                 used = 0
 
-            logging.debug('System status: Temp {0}, Disk space remaining {1}%, IP address {2}'.format(system_temp_formatted, availp, current_ip.decode()))
+            logging.debug('System status: Temp {0}, Disk space remaining {1}%, IP address {2}'.format(system_temp_formatted, availp, current_ip))
             with self.musicdata_lock:
                 self.musicdata[u'system_temp'] = system_temp
                 self.musicdata[u'system_temp_formatted'] = system_temp_formatted
