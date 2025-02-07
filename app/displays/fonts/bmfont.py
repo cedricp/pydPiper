@@ -24,7 +24,7 @@ class bmfont:
 			with open(f_path, 'r') as f:
 
 				# Read info line of font file
-				line = f.readline().decode('utf-8')
+				line = f.readline()
 
 				# Check for expected start value
 				if u'info' not in line:
@@ -39,8 +39,7 @@ class bmfont:
 				self.italic = bool(int(d[u'italic'])) if u'italic' in d else False
 
 				# Read common line
-				line = f.readline().decode('utf-8')
-
+				line = f.readline()
 				# Check for expected start value
 				if u'common' not in line:
 					# Bad file
@@ -54,7 +53,7 @@ class bmfont:
 				self.scaleH = int(d[u'scaleH']) if u'scaleH' in d else 0
 
 				# Read page line
-				line = f.readline().decode('utf-8')
+				line = f.readline().
 
 				# Check for expected start value
 				if u'page' not in line:
@@ -70,7 +69,7 @@ class bmfont:
 					self.file = self.file[1:-1]
 
 				# Read chars line
-				line = f.readline().decode('utf-8')
+				line = f.readline()
 
 				# Check for expected start value
 				if u'chars' not in line:
@@ -89,7 +88,7 @@ class bmfont:
 				for c in range(0,self.count):
 
 					# Read char line
-					line = f.readline().decode('utf-8')
+					line = f.readline()
 
 					# Check for expected start value
 					if u'char' not in line:
