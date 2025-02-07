@@ -481,7 +481,7 @@ class gwidget(widget):
 					# 	ax = (maxw-cx-fx)/2
 				elif just == u'right':
 					ax = (maxw-cx)
-				self.image.paste(lineimage, (ax, cy))
+				self.image.paste(lineimage, (int(ax), int(cy)))
 				lineimage = Image.new("1", (maxw, fy), 0)
 				cy = cy + fy
 				cx = 0

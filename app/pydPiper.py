@@ -116,6 +116,8 @@ class music_controller(threading.Thread):
                     musicservice = sources.musicdata_rune.musicdata_rune(self.musicqueue, pydPiper_config.RUNE_SERVER, pydPiper_config.RUNE_PORT, pydPiper_config.RUNE_PASSWORD)
                 elif s == u"volumio":
                     musicservice = sources.musicdata_volumio2.musicdata_volumio2(self.musicqueue, pydPiper_config.VOLUMIO_SERVER, pydPiper_config.VOLUMIO_PORT, exitapp )
+                elif s == u"volumio3":
+                    musicservice = sources.musicdata_volumio2.musicdata_volumio3(self.musicqueue, pydPiper_config.VOLUMIO_SERVER, pydPiper_config.VOLUMIO_PORT, exitapp )
                 else:
                     logging.debug(u"Unsupported music service {0} requested".format(s))
                     continue

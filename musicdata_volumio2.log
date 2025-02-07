@@ -1,0 +1,166 @@
+2025-02-07 10:31:13,702:DEBUG:Volumio 2 musicdata service starting
+2025-02-07 10:31:13,703:DEBUG:Connecting to Volumio Web Service on localhost:3000
+2025-02-07 10:31:13,712:DEBUG:Starting new HTTP connection (1): localhost:3000
+2025-02-07 10:31:17,811:WARNING:localhost:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920673704-0 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F748782B30>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-07 10:31:18,824:DEBUG:Starting new HTTP connection (2): localhost:3000
+2025-02-07 10:31:22,922:WARNING:localhost:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920678822-0 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F7487813C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-07 10:31:23,930:DEBUG:Starting new HTTP connection (3): localhost:3000
+2025-02-07 10:31:28,028:WARNING:localhost:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920683928-0 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F748780670>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-07 10:31:29,041:DEBUG:Starting new HTTP connection (4): localhost:3000
+2025-02-07 10:31:33,146:WARNING:localhost:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920689040-0 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F748781DE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-07 10:31:34,158:DEBUG:Starting new HTTP connection (5): localhost:3000
+2025-02-07 10:31:38,254:WARNING:localhost:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920694156-0 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F748781E40>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-07 10:31:39,266:DEBUG:Starting new HTTP connection (6): localhost:3000
+2025-02-07 10:31:56,647:DEBUG:Volumio 2 musicdata service starting
+2025-02-07 10:31:56,648:DEBUG:Connecting to Volumio Web Service on volumioserver:3000
+2025-02-07 10:31:56,656:DEBUG:Starting new HTTP connection (1): volumioserver:3000
+2025-02-07 10:31:59,362:WARNING:volumioserver:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='volumioserver', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920716648-0 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000025ADA582A40>: Failed to resolve 'volumioserver' ([Errno 11001] getaddrinfo failed)"))
+2025-02-07 10:32:00,371:DEBUG:Starting new HTTP connection (2): volumioserver:3000
+2025-02-07 10:32:03,077:WARNING:volumioserver:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='volumioserver', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920720369-0 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000025ADA581390>: Failed to resolve 'volumioserver' ([Errno 11001] getaddrinfo failed)"))
+2025-02-07 10:32:04,088:DEBUG:Starting new HTTP connection (3): volumioserver:3000
+2025-02-07 10:32:06,772:WARNING:volumioserver:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='volumioserver', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920724086-0 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000025ADA5805B0>: Failed to resolve 'volumioserver' ([Errno 11001] getaddrinfo failed)"))
+2025-02-07 10:32:07,780:DEBUG:Starting new HTTP connection (4): volumioserver:3000
+2025-02-07 10:32:10,482:WARNING:volumioserver:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='volumioserver', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920727778-0 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000025ADA581D80>: Failed to resolve 'volumioserver' ([Errno 11001] getaddrinfo failed)"))
+2025-02-07 10:32:11,489:DEBUG:Starting new HTTP connection (5): volumioserver:3000
+2025-02-07 10:32:14,209:WARNING:volumioserver:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='volumioserver', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920731487-0 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000025ADA582AA0>: Failed to resolve 'volumioserver' ([Errno 11001] getaddrinfo failed)"))
+2025-02-07 10:32:15,220:DEBUG:Starting new HTTP connection (6): volumioserver:3000
+2025-02-07 10:32:17,921:WARNING:volumioserver:3000/socket.io [engine.io waiting for connection] HTTPConnectionPool(host='volumioserver', port=3000): Max retries exceeded with url: /socket.io/?EIO=3&transport=polling&t=1738920735218-0 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000025ADA580640>: Failed to resolve 'volumioserver' ([Errno 11001] getaddrinfo failed)"))
+2025-02-07 10:32:18,931:DEBUG:Starting new HTTP connection (7): volumioserver:3000
+2025-02-07 10:32:27,830:DEBUG:Volumio 2 musicdata service starting
+2025-02-07 10:32:27,831:DEBUG:Connecting to Volumio Web Service on volumio:3000
+2025-02-07 10:32:27,838:DEBUG:Starting new HTTP connection (1): volumio:3000
+2025-02-07 10:32:27,857:DEBUG:http://volumio:3000 "GET /socket.io/?EIO=3&transport=polling&t=1738920747831-0 HTTP/1.1" 200 103
+2025-02-07 10:41:15,728:DEBUG:Starting new HTTP connection (1): volumio:3000
+2025-02-07 10:41:15,745:DEBUG:http://volumio:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738921275.7220035 HTTP/1.1" 200 103
+2025-02-07 10:41:55,767:DEBUG:Starting new HTTP connection (1): 127.0.0.1:3000
+2025-02-07 10:43:11,314:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 10:43:11,343:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738921391.3104966 HTTP/1.1" 200 103
+2025-02-07 10:44:26,974:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 10:44:26,979:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738921466.9702275 HTTP/1.1" 200 103
+2025-02-07 10:45:43,718:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 10:45:43,724:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738921543.709759 HTTP/1.1" 200 103
+2025-02-07 10:45:51,388:DEBUG:Starting new HTTP connection (1): volumio:3000
+2025-02-07 10:45:51,415:DEBUG:http://volumio:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738921551.3838508 HTTP/1.1" 200 103
+2025-02-07 10:48:13,114:DEBUG:Starting new HTTP connection (1): volumio:3000
+2025-02-07 10:48:13,150:DEBUG:http://volumio:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738921693.1087983 HTTP/1.1" 200 103
+2025-02-07 10:49:49,545:DEBUG:Starting new HTTP connection (1): volumio:3000
+2025-02-07 10:49:49,582:DEBUG:http://volumio:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738921789.5415313 HTTP/1.1" 200 103
+2025-02-07 10:50:12,409:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 10:50:12,415:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738921812.4052668 HTTP/1.1" 200 103
+2025-02-07 11:30:10,336:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:30:10,343:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738924210.3313682 HTTP/1.1" 200 103
+2025-02-07 11:30:33,378:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:30:33,398:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738924233.37162 HTTP/1.1" 200 103
+2025-02-07 11:33:31,720:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:33:31,726:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738924411.717736 HTTP/1.1" 200 103
+2025-02-07 11:34:47,156:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:34:47,161:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738924487.154073 HTTP/1.1" 200 103
+2025-02-07 11:35:21,623:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:35:21,646:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=4&t=1738924521.6204736 HTTP/1.1" 200 103
+2025-02-07 11:38:03,111:DEBUG:Volumio 2 musicdata service starting
+2025-02-07 11:38:03,111:DEBUG:Volumio 2 musicdata service starting
+2025-02-07 11:38:03,112:DEBUG:Connecting to Volumio Web Service on 192.168.1.24:3000
+2025-02-07 11:38:03,113:DEBUG:Connecting to Volumio Web Service on 192.168.1.24:3000
+2025-02-07 11:38:03,124:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:38:03,125:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:38:03,131:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?EIO=3&transport=polling&t=1738924683113-0 HTTP/1.1" 200 103
+2025-02-07 11:38:03,134:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?EIO=3&transport=polling&t=1738924683114-0 HTTP/1.1" 200 103
+2025-02-07 11:40:11,160:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:40:11,175:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738924811.1550186 HTTP/1.1" 200 103
+2025-02-07 11:40:11,177:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:42:05,686:DEBUG:Volumio 2 musicdata service starting
+2025-02-07 11:42:05,686:DEBUG:Volumio 2 musicdata service starting
+2025-02-07 11:42:05,686:DEBUG:Connecting to Volumio Web Service on 192.168.1.24:3000
+2025-02-07 11:42:05,686:DEBUG:Connecting to Volumio Web Service on 192.168.1.24:3000
+2025-02-07 11:42:05,695:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:42:05,696:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:42:05,702:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?EIO=3&transport=polling&t=1738924925688-0 HTTP/1.1" 200 103
+2025-02-07 11:42:05,712:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?EIO=3&transport=polling&t=1738924925687-0 HTTP/1.1" 200 103
+2025-02-07 11:47:48,077:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:47:48,080:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:47:48,083:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925268.0716293 HTTP/1.1" 200 103
+2025-02-07 11:47:48,084:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:47:48,105:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925268.0716293 HTTP/1.1" 200 103
+2025-02-07 11:47:48,108:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:47:48,126:DEBUG:http://192.168.1.24:3000 "POST /socket.io/?transport=polling&EIO=3&sid=tF7X88R-16pER86UAAAm&sid=TSDwt8U1M55RThVxAAAn HTTP/1.1" 400 None
+2025-02-07 11:48:30,962:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:48:30,964:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:48:30,969:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925310.9550333 HTTP/1.1" 200 103
+2025-02-07 11:48:30,971:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:48:30,983:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925310.9550333 HTTP/1.1" 200 103
+2025-02-07 11:48:30,985:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:48:30,999:DEBUG:http://192.168.1.24:3000 "POST /socket.io/?transport=polling&EIO=3&sid=S2uPh1LzA3D0hKIfAAAo&sid=AzvrnzeGheTm4KBFAAAp HTTP/1.1" 400 None
+2025-02-07 11:49:01,622:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:49:01,623:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:49:01,650:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925341.6146467 HTTP/1.1" 200 103
+2025-02-07 11:49:01,652:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:49:01,653:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925341.6146467 HTTP/1.1" 200 103
+2025-02-07 11:49:01,655:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:50:30,983:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:50:30,983:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:50:30,989:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925430.9778433 HTTP/1.1" 200 103
+2025-02-07 11:50:30,990:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:50:31,012:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925430.9778433 HTTP/1.1" 200 103
+2025-02-07 11:50:31,014:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:50:31,030:DEBUG:http://192.168.1.24:3000 "POST /socket.io/?transport=polling&EIO=3&sid=XntyVOMM7e-cy7NzAAAs&sid=E3zCPUIvJhQuNAltAAAt HTTP/1.1" 400 None
+2025-02-07 11:51:32,296:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:51:32,298:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:51:32,311:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925492.290282 HTTP/1.1" 200 103
+2025-02-07 11:51:32,314:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:51:32,335:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925492.2912543 HTTP/1.1" 200 103
+2025-02-07 11:51:32,338:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:51:32,344:DEBUG:http://192.168.1.24:3000 "POST /socket.io/?transport=polling&EIO=3&sid=8mQJHcKaXt_p68AmAAAu&sid=u-9ZepmvQj-lEB1oAAAv HTTP/1.1" 400 None
+2025-02-07 11:52:17,422:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:52:17,423:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:52:17,428:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925537.4187126 HTTP/1.1" 200 103
+2025-02-07 11:52:17,429:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:52:17,452:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925537.4187126 HTTP/1.1" 200 103
+2025-02-07 11:52:17,456:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:52:17,463:DEBUG:http://192.168.1.24:3000 "POST /socket.io/?transport=polling&EIO=3&sid=6C99Y_-jXX3YVyrhAAAw&sid=BehQe5davxZonbyoAAAx HTTP/1.1" 400 None
+2025-02-07 11:52:57,196:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:52:57,198:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:52:57,202:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925577.1908493 HTTP/1.1" 200 103
+2025-02-07 11:52:57,203:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:52:57,206:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925577.189819 HTTP/1.1" 200 103
+2025-02-07 11:52:57,208:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:54:54,370:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:54:54,371:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:54:54,378:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925694.3632872 HTTP/1.1" 200 103
+2025-02-07 11:54:54,380:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:54:54,387:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925694.3632872 HTTP/1.1" 200 103
+2025-02-07 11:54:54,389:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:58:58,370:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:58:58,370:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:58:58,375:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925938.3651452 HTTP/1.1" 200 103
+2025-02-07 11:58:58,376:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:58:58,400:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925938.3661454 HTTP/1.1" 200 103
+2025-02-07 11:58:58,406:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:58:58,412:DEBUG:http://192.168.1.24:3000 "POST /socket.io/?transport=polling&EIO=3&sid=-g-W4yYsRASTSKokAAA2&sid=crk5qLD9n9t83wnrAAA3 HTTP/1.1" 400 None
+2025-02-07 11:59:15,980:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:59:15,980:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:59:15,987:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925955.9768522 HTTP/1.1" 200 103
+2025-02-07 11:59:15,989:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:59:15,990:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925955.9768522 HTTP/1.1" 200 103
+2025-02-07 11:59:15,991:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:59:47,609:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 11:59:47,610:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 11:59:47,615:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925987.6042466 HTTP/1.1" 200 103
+2025-02-07 11:59:47,616:DEBUG:Connected to Volumio Web Service
+2025-02-07 11:59:47,618:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738925987.6052473 HTTP/1.1" 200 103
+2025-02-07 11:59:47,619:DEBUG:Connected to Volumio Web Service
+2025-02-07 12:00:12,653:ERROR:disconnect handler error
+Traceback (most recent call last):
+  File "C:\Users\cedri\AppData\Local\Programs\Python\Python310\lib\site-packages\engineio\client.py", line 549, in _trigger_event
+    return self.handlers[event](*args)
+  File "C:\Users\cedri\AppData\Local\Programs\Python\Python310\lib\site-packages\socketio\client.py", line 633, in _handle_eio_disconnect
+    self._trigger_event('disconnect', namespace='/')
+  File "C:\Users\cedri\AppData\Local\Programs\Python\Python310\lib\site-packages\socketio\client.py", line 550, in _trigger_event
+    return self.handlers[namespace][event](*args)
+TypeError: musicdata_volumio3.callbacks.<locals>.disconnect() missing 1 required positional argument: 'self'
+2025-02-07 12:01:52,396:DEBUG:Starting new HTTP connection (1): 192.168.1.24:3000
+2025-02-07 12:01:52,398:DEBUG:Starting new HTTP connection (2): 192.168.1.24:3000
+2025-02-07 12:01:52,404:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738926112.387346 HTTP/1.1" 200 103
+2025-02-07 12:01:52,406:DEBUG:Connected to Volumio Web Service
+2025-02-07 12:01:52,427:DEBUG:http://192.168.1.24:3000 "GET /socket.io/?transport=polling&EIO=3&t=1738926112.3883448 HTTP/1.1" 200 103
+2025-02-07 12:01:52,432:DEBUG:Connected to Volumio Web Service
+2025-02-07 12:01:52,437:DEBUG:http://192.168.1.24:3000 "POST /socket.io/?transport=polling&EIO=3&sid=hspBu-klZymwEX1IAAA8&sid=qOzPnXJteoa51qs7AAA9 HTTP/1.1" 400 None

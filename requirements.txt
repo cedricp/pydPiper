@@ -6,7 +6,9 @@ pyLMS
 redis
 pyOWM
 socketIO-client
+python-socketio==4.6.0
 smbus
 numpy
+python-engineio==3.14.2
 #RPi.GPIO
 #Pillow
