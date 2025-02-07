@@ -307,6 +307,7 @@ class gwidget(widget):
 				self.clear()
 				for e in self.widgets:
 					widget,x,y,w,h = e
+					print(f">>>>>>>>>>{e}")
 					self.place(widget, x,y, (w,h))
 			return retval
 		elif self.type == u'scroll':
@@ -326,7 +327,7 @@ class gwidget(widget):
 		self.updatesize()
 		self.widgets = []
 
-	def add(self, widget, x,y, w=0,h=0): # Add a widget to the canvas
+	def add(self, widget, x, y, w=0,h=0): # Add a widget to the canvas
 
 		if self.type != u'canvas':
 			logging.warning("Trying to add a widget to something that is not a canvas")
