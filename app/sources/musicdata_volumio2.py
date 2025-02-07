@@ -5,7 +5,7 @@
 # Written by: Ron Ritchey
 
 import threading, logging, queue, time, sys
-import musicdata
+from . import musicdata
 from socketIO_client import SocketIO
 
 
