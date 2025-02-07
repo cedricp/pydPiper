@@ -126,7 +126,7 @@ class bmfont:
 		f_path = os.path.join(os.path.dirname(__file__), self.file)
 		with Image.open(f_path) as im:
 
-			for k,v in self.chardata.iteritems():
+			for k,v in self.chardata.items():
 				x,y,w,h,xadvance = v
 
 				# Adjust the width of the character based upon the xadvance field
