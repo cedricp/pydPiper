@@ -1,0 +1,16 @@
+[Unit]
+    Description=pydPiper music display service
+    After=rune_PL_wrk.service
+
+    [Service]
+		WorkingDirectory=/usr/local/bin/pydPiper
+    ExecStart=/usr/bin/python2 /usr/local/bin/pydPiper/pydPiper.py --rune
+    ExecReload=/usr/bin/kill -HUP $MAINPID
+    KillMode=process
+    Restart=always
+    RestartSec=10
+    StartLimitInterval=30
+    StartLimitBurst=20
+
+    [Install]
+    WantedBy=multi-user.target

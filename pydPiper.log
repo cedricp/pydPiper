@@ -1,0 +1,10 @@
+2025-02-06 15:52:25,038:INFO:pydPiper starting
+2025-02-06 15:52:25,039:ERROR:Uncaught exception
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\cedric\Documents\sources\pydPiper-master\app\pydPiper.py", line 723, in <module>
+    lcd = displays.winstar_weg.winstar_weg(rows, cols, pin_rs, pin_e, pins_data, enable)
+AttributeError: module 'app.displays' has no attribute 'winstar_weg'
