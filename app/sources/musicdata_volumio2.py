@@ -45,22 +45,18 @@ class musicdata_volumio3(musicdata.musicdata):
 
 		@self.sio.event
 		def GetState(data):
-			print('GetState received with ', data)
 			self.on_multiroomdevices_response(data)
 
 		@self.sio.event
 		def pushState(data):
-			print('pushState received with ', data)
 			self.on_state_response(data)
 
 		@self.sio.event
 		def pushMultiRoomDevices(data):
-			print('pushMultiRoomDevices received with ', data)
 			self.on_multiroomdevices_response(data)
 
 		@self.sio.event
 		def pushQueue(data):
-			print('pushMultiRoomDevices received with ', data)
 			self.on_queue_response(data)
 
 		@self.sio.event
