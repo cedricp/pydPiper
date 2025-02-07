@@ -7,5 +7,6 @@ redis
 pyOWM
 socketIO-client
 smbus
+numpy
 #RPi.GPIO
 #Pillow

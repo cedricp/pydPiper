@@ -7,4 +7,4 @@ __all__ = [ u"musicdata_lms", u"musicdata_mpd", u"musicdata_spop", u"musicdata_r
 #from . import musicdata_rune
 from . import musicdata_volumio2
 from . import musicdata
-from . import kegdata
+#from . import kegdata

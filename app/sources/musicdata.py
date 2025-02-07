@@ -1,5 +1,4 @@
 # meta - base class for collecting meta data from music sources
-from __future__ import unicode_literals
 
 import abc,logging,urllib,contextlib
 import urllib.parse
