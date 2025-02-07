@@ -28,7 +28,7 @@ class musicdata_volumio3(musicdata.musicdata):
 		self.exitapp = exitapp
 
 	def run(self):
-		self.sio.connect(f"http://{server}:{port}")
+		self.sio.connect(f"http://{self.server}:{self.port}")
 		print("Connected to Volumio Web Service")
 		while not self.exitapp[0]:
 			self.sio.sleep(seconds=2)
