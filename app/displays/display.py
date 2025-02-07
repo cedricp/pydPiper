@@ -217,20 +217,6 @@ class widget:
 							break
 					else:
 						retval = u' '
-
-#			elif transform_request in [ u'local' ]:
-#				# requires a moment object as input
-#
-#				if type(retval) is moment.core.Moment:
-#					try:
-#						retval = retval.timezone(pydPiper_config.TIMEZONE)
-#					except ValueError:
-#						# Received bad timezone value
-#						logging.debug("Cannot convert timezone.  Requested timezone ({0}) is not valid".format(pydPiper_config.TIMEZONE))
-#				else:
-#					# Bad input provided
-#					logging.debug(u'Expected a moment variable but received a {0}'.format(type(retval)))
-
 		return retval
 
 	def clear(self,image,x,y,width,height):
@@ -307,7 +293,6 @@ class gwidget(widget):
 				self.clear()
 				for e in self.widgets:
 					widget,x,y,w,h = e
-					print(f">>>>>>>>>>{e}")
 					self.place(widget, x,y, (w,h))
 			return retval
 		elif self.type == u'scroll':

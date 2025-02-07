@@ -223,8 +223,8 @@ class musicdata_mpd(musicdata.musicdata):
 			timepos = time.strftime("%-M:%S", time.gmtime(int(self.musicdata['elapsed'])))
 			remaining = timepos
 
-		self.musicdata[u'remaining'] = remaining.decode()
-		self.musicdata[u'elapsed_formatted'] = timepos.decode()
+		self.musicdata[u'remaining'] = remaining
+		self.musicdata[u'elapsed_formatted'] = timepos
 
 		# For backwards compatibility
 		self.musicdata[u'position'] = self.musicdata[u'elapsed_formatted']

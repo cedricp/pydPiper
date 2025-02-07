@@ -88,7 +88,7 @@ class kegdata():
 							vars[v] = u""
 						elif type(vars[v]) is str:
 							logging.debug(u"Received string in {0}.  Converting to Unicode".format(v))
-							vars[v] = vars[v].decode()
+							vars[v] = vars[v]
 						else:
 							# This happens so often when playing from webradio that I'm disabling logging for now.
 #							logging.debug(u"Received non-string type {0} in {1}.  Converting to null".format(type(vars[v]),v))
