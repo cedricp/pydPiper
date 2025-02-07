@@ -357,7 +357,7 @@ class gwidget(widget):
 		else:
 			img = widget.image
 
-		self.image.paste(img, (x,y))
+		self.image.paste(img, (int(x),int(y)))
 
 	# TEXT widget functions
 	def textsize(self, msg, fontpkg, varwidth): # returns the size needed to contain provided message
