@@ -123,7 +123,7 @@ class musicdata:
 							vars[v] = u""
 						elif type(vars[v]) is str:
 							logging.debug(u"Received string in {0}.  Converting to Unicode".format(v))
-							vars[v] = vars[v].decode()
+							vars[v] = vars[v]
 						else:
 							# This happens so often when playing from webradio that I'm disabling logging for now.
 #							logging.debug(u"Received non-string type {0} in {1}.  Converting to null".format(type(vars[v]),v))
@@ -197,7 +197,7 @@ class musicdata:
 							else:
 								try:
 									logging.debug(u"Found {0}".format(retval))
-									return retval.decode()
+									return retval
 								except:
 									logging.debug(u"Not sure what I found {0}".format(retval))
 									return u''
@@ -207,7 +207,7 @@ class musicdata:
 						except:
 							retval = line.split(u'Title1=')[0]
 						retval = retval.split(u'(')[0].strip()
-						return retval.decode()
+						return retval
 
 					if cnt == 0: break
 			except:

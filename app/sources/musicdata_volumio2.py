@@ -211,8 +211,8 @@ class musicdata_volumio3(musicdata.musicdata):
 				timepos = time.strftime(u"%-M:%S", time.gmtime(int(self.musicdata[u'elapsed'])))
 				remaining = timepos
 
-			self.musicdata[u'remaining'] = remaining.decode()
-			self.musicdata[u'elapsed_formatted'] = timepos.decode()
+			self.musicdata[u'remaining'] = remaining
+			self.musicdata[u'elapsed_formatted'] = timepos
 
 			# For backwards compatibility
 			self.musicdata[u'position'] = self.musicdata[u'elapsed_formatted']
@@ -410,8 +410,8 @@ class musicdata_volumio2(musicdata.musicdata):
 				timepos = time.strftime(u"%-M:%S", time.gmtime(int(self.musicdata[u'elapsed'])))
 				remaining = timepos
 
-			self.musicdata[u'remaining'] = remaining.decode()
-			self.musicdata[u'elapsed_formatted'] = timepos.decode()
+			self.musicdata[u'remaining'] = remaining
+			self.musicdata[u'elapsed_formatted'] = timepos
 
 			# For backwards compatibility
 			self.musicdata[u'position'] = self.musicdata[u'elapsed_formatted']

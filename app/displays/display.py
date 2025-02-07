@@ -1500,7 +1500,7 @@ class display_controller(object):
 						logging.warning('Canvas {0} attempted to add widget {1} but it was not found in the widget list'.format(k, wname))
 						continue
 
-					widget.add(widtoadd, (x,y))
+					widget.add(widtoadd, x,y)
 
 			# Add effect if requested
 			effect = v['effect'] if 'effect' in v else None
@@ -1714,7 +1714,7 @@ if __name__ == '__main__':
 	while True:
 		db['elapsed'] = int(time.time()-starttime)
 		# timepos = time.strftime(u"%-M:%S", time.gmtime(int(elapsed))) + "/" + time.strftime(u"%-M:%S", time.gmtime(int(254)))
-		# current_time = moment.utcnow().timezone('US/Eastern').strftime(u"%H:%M:%S").strip().decode()
+		# current_time = moment.utcnow().timezone('US/Eastern').strftime(u"%H:%M:%S").strip()
 		# db['elapsed_formatted'] = timepos
 		# db['time_formatted'] = current_time
 
