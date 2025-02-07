@@ -60,7 +60,7 @@ class musicdata_volumio2(musicdata.musicdata):
 		list = args[0][u'list']
 
 		for i in range(0, len(list)):
-			for item, value in list[i].iteritems():
+			for item, value in list[i].items():
 				if item == u'isSelf':
 					if value == True:
 						with self.musicdata_lock:
@@ -158,7 +158,7 @@ class musicdata_volumio2(musicdata.musicdata):
 			self.musicdata[u'mute'] = self.booln(status[u'mute']) if u'mute' in status else False
 
 			# Check all other items.  If any are None then set to u''
-#			for k, v in self.musicdata.iteritems():
+#			for k, v in self.musicdata.items():
 #				if v is None:
 #					self.musicdata[k] = u''
 
@@ -253,7 +253,7 @@ if __name__ == u'__main__':
 
 				ctime = moment.utcnow().timezone(u"US/Eastern").strftime(u"%-I:%M:%S %p").strip()
 				print (u"\n\nStatus at time {0}".format(ctime))
-				for item,value in status.iteritems():
+				for item,value in status.items():
 					print (u"    [{0}]={1} {2}".format(item,value, type(value)))
 				print (u"\n\n")
 

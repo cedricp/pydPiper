@@ -274,7 +274,7 @@ if __name__ == u'__main__':
 			try:
 				item = q.get(timeout=1000)
 				print (u"+++++++++")
-				for k,v in item.iteritems():
+				for k,v in item.items():
 					print (u"[{0}] '{1}' type {2}".format(k,v,type(v)))
 				print (u"+++++++++")
 				print

@@ -77,7 +77,7 @@ class mds:
 	def sendUpdate(self):
 		# Figure out what has changed and then send just those values across dataqueue
 		md = { }
-		for k, v in self.playerState.iteritems():
+		for k, v in self.playerState.items():
 			pv = self.playerStateLastUpdate[k] if k in self.playerStateLastUpdate else None
 			if pv != v:
 				md[k] = v

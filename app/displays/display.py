@@ -1321,7 +1321,7 @@ class display_controller(object):
 
 		# Load fonts
 		try:
-			for k,v in self.pages.FONTS.iteritems():
+			for k,v in self.pages.FONTS.items():
 				fontfile = v['file'] if 'file' in v else ''
 				isdefault = v['default'] if 'default' in v else False
 				if fontfile:
@@ -1341,7 +1341,7 @@ class display_controller(object):
 
 		# Load truetype fonts
 		try:
-			for k,v in self.pages.TRUETYPE_FONTS.iteritems():
+			for k,v in self.pages.TRUETYPE_FONTS.items():
 				fontfile = v['file'] if 'file' in v else ''
 				fontsize = v['size'] if 'size' in v else 8
 				if fontfile:
@@ -1365,7 +1365,7 @@ class display_controller(object):
 
 		try:
 			# Load images
-			for k,v in self.pages.IMAGES.iteritems():
+			for k,v in self.pages.IMAGES.items():
 				imagefile = v['file'] if 'file' in v else ''
 				if imagefile:
 					logging.debug('Loading image {0}'.format(k))
@@ -1381,7 +1381,7 @@ class display_controller(object):
 			pass
 
 		# Add type field to CANVAS widgets
-		for k,v in self.pages.CANVASES.iteritems():
+		for k,v in self.pages.CANVASES.items():
 			v['type'] = 'canvas'
 
 		self.loadwidgets(self.pages.WIDGETS)
@@ -1393,7 +1393,7 @@ class display_controller(object):
 	def loadwidgets(self, pageWidgets): # Load widgets. Return any widgets that could not be loaded because a widget contained within it was not found
 
 		# Load widgets
-		for k,v in pageWidgets.iteritems():
+		for k,v in pageWidgets.items():
 			typeval = v['type'].lower() if 'type' in v else ''
 
 			if typeval not in ['canvas', 'text', 'ttext', 'progressbar', 'progressimagebar', 'line', 'rectangle', 'image' ]:

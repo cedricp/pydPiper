@@ -78,12 +78,12 @@ class kegdata():
 
 	def validatekegvars(self, vars):
 
-		for vtype, members in self.varcheck.iteritems():
+		for vtype, members in self.varcheck.items():
 
 			if vtype == u'unicode':
 				for v in members:
 					try:
-						if type(vars[v]) is unicode:
+						if type(vars[v]) is str:
 							continue
 						if type(vars[v]) is None:
 							vars[v] = u""
@@ -234,7 +234,7 @@ class kegdata():
 	def sendUpdate(self):
 		# Figure out what has changed and then send just those values across dataqueue
 		md = { }
-		for k, v in self.kegdata.iteritems():
+		for k, v in self.kegdata.items():
 			pv = self.kegdata_prev[k] if k in self.kegdata_prev else None
 			if pv != v:
 				md[k] = v
@@ -290,7 +290,7 @@ if __name__ == u'__main__':
 			try:
 				item = q.get(timeout=1000)
 				print ("++++++++++")
-				for k,v in item.iteritems():
+				for k,v in item.items():
 					print (u"[{0}] '{1}' type {2}".format(k,v,type(v)))
 				print (u"++++++++++")
 				print

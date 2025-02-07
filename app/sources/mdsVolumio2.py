@@ -70,7 +70,7 @@ class mdsVolumio2(mds.mds):
 
 		status = args[0]
 		with self.lMDS:
-			for k, v in status.iteritems():
+			for k, v in status.items():
 				self.playerState[k] = v
 		self.sendUpdate()
 
@@ -127,7 +127,7 @@ if __name__ == u'__main__':
 
 				ctime = moment.utcnow().timezone(u"US/Eastern").strftime(u"%-I:%M:%S %p").strip()
 				print (u"\nStatus at time {0}".format(ctime))
-				for item,value in status.iteritems():
+				for item,value in status.items():
 					print (u"    [{0}]={1} {2}".format(item,value, type(value)))
 
 			except queue.Empty:

@@ -192,7 +192,7 @@ class music_controller(threading.Thread):
 
             with self.musicdata_lock:
                 # Update musicdata based upon received message
-                for item, value in updates.iteritems():
+                for item, value in updates.items():
                     self.musicdata[item] = value
 
                 # Update song timing variables
@@ -257,7 +257,7 @@ class music_controller(threading.Thread):
 
                     # Check to see if a variable has changed (except time variables)
                     shouldshowupdate = False
-                    for item, value in self.musicdata.iteritems():
+                    for item, value in self.musicdata.items():
                         try:
                             if item in ['utc', 'localtime', 'time', 'time_ampm', 'current_time', 'current_time_sec']:
                                 continue
@@ -274,7 +274,7 @@ class music_controller(threading.Thread):
                         print (u"Status at time {0}".format(ctime))
 
                         with self.musicdata_lock:
-                            for item,value in self.musicdata.iteritems():
+                            for item,value in self.musicdata.items():
                                 try:
                                     print (u"    [{0}]={1} {2}".format(item,repr(value), type(value)))
                                 except:
@@ -286,7 +286,7 @@ class music_controller(threading.Thread):
 
                 # Update musicdata_prev
                 with self.musicdata_lock:
-                    for item, value in self.musicdata.iteritems():
+                    for item, value in self.musicdata.items():
                         try:
                             if self.musicdata_prev[item] != value:
                                 self.musicdata_prev[item] = value

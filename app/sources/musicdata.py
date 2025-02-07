@@ -113,7 +113,7 @@ class musicdata:
 
 	def validatemusicvars(self, vars):
 
-		for vtype, members in self.varcheck.iteritems():
+		for vtype, members in self.varcheck.items():
 
 			if vtype == u'unicode':
 				for v in members:
@@ -220,7 +220,7 @@ class musicdata:
 	def sendUpdate(self):
 		# Figure out what has changed and then send just those values across dataqueue
 		md = { }
-		for k, v in self.musicdata.iteritems():
+		for k, v in self.musicdata.items():
 			pv = self.musicdata_prev[k] if k in self.musicdata_prev else None
 			if pv != v:
 				md[k] = v

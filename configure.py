@@ -294,7 +294,7 @@ if __name__ == u'__main__':
                 config.set(section_name, question['variable'], value)
             if 'followup_questions' in question:
                 if sys.version_info[0] < 3:
-                    for match, followup_questions in question['followup_questions'].iteritems():
+                    for match, followup_questions in question['followup_questions'].items():
                         if re.match(match,value):
                             process_questions(section_name, followup_questions, config)
                 else:
