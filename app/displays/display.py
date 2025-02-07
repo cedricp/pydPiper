@@ -307,7 +307,7 @@ class gwidget(widget):
 				self.clear()
 				for e in self.widgets:
 					widget,x,y,w,h = e
-					self.place(widget, (x,y), (w,h))
+					self.place(widget, x,y, (w,h))
 			return retval
 		elif self.type == u'scroll':
 			return self.scroll(self.widget, self.direction, self.distance, self.speed, self.gap, self.hesitatetype, self.hesitatetime,self.threshold, reset)
