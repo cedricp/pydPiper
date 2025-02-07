@@ -1,3 +1,27 @@
+# This is a fork for Volumio 3!!
+
+The original project is located at https://github.com/dhrone/pydPiper
+This repo tries to make work Volumio 3 with a HD44780 16x2 lines (for my need)
+I removed the docker system to make it lightweight
+
+## How to install
+
+You'll need python3 and some of its components :
+* `sudo apt-get install python3 python3-pip`
+* `pip3 install -r requirements.txt`
+* clone this project in /home/volumio
+test it with
+`cd ~/pydPiper`
+`python3 -m app.pydPiper`
+
+to auto start the module, copy pydpiper.service to /etc/systemd/system
+reload systemctl :
+`systemctl daemon-reload`
+start the service :
+`systemctl start pydpiper.service`
+check with :
+`systemctl status pydpiper.service`
+
 # pydPiper ![splash](displays/images/pydPiper_splash.png)
 A python program written for the Raspberry Pi that controls small LCD and OLED screens for music distributions like Volumio, MoodeAudio, and Max2Play.
 
