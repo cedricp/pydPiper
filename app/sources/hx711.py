@@ -91,13 +91,13 @@ class HX711:
 
     def get_np_arr8_string(self):
         np_arr8 = self.read_np_arr8()
-        np_arr8_string = "[";
+        np_arr8_string = "["
         comma = ", "
         for i in range(4):
             if i is 3:
                 comma = ""
             np_arr8_string += str(np_arr8[i]) + comma
-        np_arr8_string += "]";
+        np_arr8_string += "]"
         
         return np_arr8_string
 

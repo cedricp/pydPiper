@@ -3,10 +3,9 @@
 
 # kegdata service to read about key status
 # Written by: Ron Ritchey
-from __future__ import unicode_literals
 
 import threading, logging, queue, time, logging
-from hx711 import HX711
+from .hx711 import HX711
 
 # HOW TO CALCULATE THE REFFERENCE UNIT
 # To set the reference unit to 1. Put 1kg on your sensor or anything you have and know exactly how much it weights.
