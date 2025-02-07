@@ -53,7 +53,7 @@ class bmfont:
 				self.scaleH = int(d[u'scaleH']) if u'scaleH' in d else 0
 
 				# Read page line
-				line = f.readline().
+				line = f.readline()
 
 				# Check for expected start value
 				if u'page' not in line:
