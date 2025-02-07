@@ -333,7 +333,7 @@ class gwidget(widget):
 			return
 
 		self.widgets.append( (widget,x,y,w,h) )
-		self.place(widget, (x,y), (w,h) )
+		self.place(widget, x,y, (w,h))
 		return self
 
 	def clear(self): # Erase canvas
