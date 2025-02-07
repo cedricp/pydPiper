@@ -533,7 +533,7 @@ class gwidget(widget):
 			# 	ax = (maxw-cx-fx)/2
 		elif just == u'right':
 			ax = (maxw-cx)
-		self.image.paste(lineimage, (ax, cy))
+		self.image.paste(lineimage, (int(ax), int(cy)))
 
 		self.updatesize()
 
@@ -621,7 +621,7 @@ class gwidget(widget):
 			# 	ax = (maxw-cx-fx)/2
 		elif just == u'right':
 			ax = (maxw-cx)
-		self.image.paste(textimage, (ax, 0))
+		self.image.paste(textimage, (int(ax), 0))
 
 		self.updatesize()
 
@@ -840,11 +840,11 @@ class gwidget(widget):
 
 		if bwidth > 0 and bheight > 0:
 			if direction in ['right']:
-				background.paste(Image.new("1", (bwidth, bheight), 1), (self.image.size[0]-bwidth,0))
+				background.paste(Image.new("1", (int(bwidth), int(bheight)), 1), (int(self.image.size[0])-int(bwidth),0))
 			elif direction in ['up']:
-				background.paste(Image.new("1", (bwidth, bheight), 1), (0,self.image.size[1]-bheight))
+				background.paste(Image.new("1", (int(bwidth), int(bheight)), 1), (0,int(self.image.size[1]-bheight)))
 			else: # ['left', 'down'] or default if bad direction provided
-				background.paste(Image.new("1", (bwidth, bheight), 1), (0,0))
+				background.paste(Image.new("1", (int(bwidth), int(bheight)), 1), (0,0))
 
 		# Combine background with image
 		background.paste(self.image, (0,0), self.image)
@@ -1128,12 +1128,12 @@ class gwidget(widget):
 			hregion = self.expanded_image.crop( (0,0,self.hindex,self.eheight) )
 			hbody = self.expanded_image.crop( (self.hindex,0,self.ewidth,self.eheight) )
 			self.image.paste( hbody, (0,0) )
-			self.image.paste( hregion, (self.ewidth - self.hindex, 0) )
+			self.image.paste( hregion, (int(self.ewidth) - int(self.hindex), 0) )
 		elif direction in [u'up',u'down']:
 			vregion = self.expanded_image.crop( (0,0,self.ewidth,self.vindex) )
 			vbody = self.expanded_image.crop( (0,self.vindex,self.ewidth,self.eheight) )
 			self.image.paste( vbody, (0,0) )
-			self.image.paste( vregion, (0, self.eheight - self.vindex) )
+			self.image.paste( vregion, (0, int(self.eheight) - int(self.vindex)) )
 
 		if hesitatetype == u'onloop' and ( (self.hindex == 0 and self.direction in [u'left',u'right']) or (self.vindex == 0 and self.direction in [u'up',u'down'])):
 			self.start = time.time()

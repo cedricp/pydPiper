@@ -177,13 +177,13 @@ class music_controller(threading.Thread):
             try:
                 utc = moment.utcnow()
                 localtime = moment.utcnow().timezone(pydPiper_config.TIMEZONE)
-                current_time_ampm = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%p").strip().decode()
+                current_time_ampm = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%p").strip()
                 if pydPiper_config.TIME24HOUR == True:
-                    current_time = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%H:%M").strip().decode()
-                    current_time_sec = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%H:%M:%S").strip().decode()
+                    current_time = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%H:%M").strip()
+                    current_time_sec = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%H:%M:%S").strip()
                 else:
-                    current_time = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%-I:%M %p").strip().decode()
-                    current_time_sec = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%-I:%M:%S %p").strip().decode()
+                    current_time = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%-I:%M %p").strip()
+                    current_time_sec = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime(u"%-I:%M:%S %p").strip()
             except ValueError:
                 # Don't know why but on exit, the moment code is occasionally throwing a ValueError
                 current_time = u"00:00"
@@ -220,8 +220,8 @@ class music_controller(threading.Thread):
                         timepos = time.strftime("%-M:%S", time.gmtime(self.musicdata[u'elapsed']))
                         remaining = timepos
 
-                    self.musicdata[u'remaining'] = remaining.decode()
-                    self.musicdata[u'elapsed_formatted'] = self.musicdata[u'position'] = timepos.decode()
+                    self.musicdata[u'remaining'] = remaining
+                    self.musicdata[u'elapsed_formatted'] = self.musicdata[u'position'] = timepos
 
                 # Update onoff variables (random, single, repeat)
                 self.musicdata[u'random_onoff'] = u"On" if self.musicdata[u'random'] else u"Off"
@@ -246,7 +246,7 @@ class music_controller(threading.Thread):
                 # Set lastupdate time to 1 second in the future
                 lastupdate = time.time()+1
 
-                self.musicdata[u'time_formatted'] = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime('%H:%M').strip().decode()
+                self.musicdata[u'time_formatted'] = moment.utcnow().timezone(pydPiper_config.TIMEZONE).strftime('%H:%M').strip()
                 # To support previous key used for this purpose
                 self.musicdata[u'current_time_formatted'] = self.musicdata[u'time_formatted']
 
@@ -556,10 +556,10 @@ class music_controller(threading.Thread):
                 self.musicdata[u'disk_usedp'] = usedp
 
 
-                self.musicdata[u'ip'] = current_ip.decode()
+                self.musicdata[u'ip'] = current_ip
 
                 # For backwards compatibility
-                self.musicdata[u'current_ip'] = current_ip.decode()
+                self.musicdata[u'current_ip'] = current_ip
 
             # Sleep until next update which occurs every minutes
             pause.sleepUntil(time.time()+300, exitapp)
