@@ -14,7 +14,7 @@ test it with
 `cd ~/pydPiper`
 `python3 -m app.pydPiper`
 
-to auto start the module, copy pydpiper.service to /etc/systemd/system
+to auto start the module, copy `pydpiper`.service to `/etc/systemd/system`
 reload systemctl :
 `systemctl daemon-reload`
 start the service :

@@ -6,3 +6,6 @@ Description=LCD server for music player
 ExecStart=/usr/bin/python3 -m app.pydPiper
 WorkingDirectory=/home/volumio/pydPiper
 User=volumio
+
+[Install]
+WantedBy=multi-user.target
