@@ -1484,7 +1484,7 @@ class display_controller(object):
 					logging.warning('Attempted to add create canvas {0} without a size.  Skipping...'.format(k))
 					continue
 
-				widget = gwidgetCanvas(size)
+				widget = gwidgetCanvas(*size)
 				for wtuple in widgetentries:
 					try:
 						wname, x, y = wtuple
@@ -1523,7 +1523,7 @@ class display_controller(object):
 						# If size is (0,0) then there was no specified size and this step should be skipped
 						if not (tw == 0 and th == 0):
 							if widget.size[0] > tw or widget.size[1] > th:
-								cwidget = gwidgetCanvas(size)
+								cwidget = gwidgetCanvas(*size)
 								cwidget.add(widget, (0,0))
 								widget = cwidget
 
