@@ -230,6 +230,12 @@ class musicdata_volumio3(musicdata_volumiobase):
 		@self.sio.event
 		def disconnect():
 			print('disconnected from server')
+
+		@self.sio.event
+		def connect_error():
+			print('disconnected from server')
+			time.sleep(2)
+			self.sio.connect(f"http://{self.server}:{self.port}")
 	
 
 class musicdata_volumio2(musicdata_volumiobase):
