@@ -190,13 +190,13 @@ class musicdata_volumio3(musicdata_volumiobase):
 		print("Connected to Volumio Web Service")
 		# Try to keep connection alive
 		while 1:
-			with self.sio.connect(f"http://{self.server}:{self.port}"):
-				while 1:
-					self.sio.sleep(seconds=1)
-					self.sio.emit(u'getQueue', '')
-					self.sio.emit(u'getState', '')
-					if self.exitapp[0]:
-						return
+			self.sio.connect(f"http://{self.server}:{self.port}"):
+			while self.sio.connected:
+				self.sio.sleep(seconds=1)
+				self.sio.emit(u'getQueue', '')
+				self.sio.emit(u'getState', '')
+				if self.exitapp[0]:
+					return
 			time.sleep(2)
 
 	def init_callbacks(self):
