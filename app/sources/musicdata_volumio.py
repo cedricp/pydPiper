@@ -191,13 +191,18 @@ class musicdata_volumio3(musicdata_volumiobase):
 		# Try to keep connection alive
 		while 1:
 			self.sio.connect(f"http://{self.server}:{self.port}")
+			if self.sio.connected:
+				logging.info("Connected to Volumio3")
 			while self.sio.connected:
 				self.sio.sleep(seconds=1)
 				self.sio.emit(u'getQueue', '')
 				self.sio.emit(u'getState', '')
 				if self.exitapp[0]:
 					return
+			logging.info("Not connected, trying to reconnect....")
 			time.sleep(2)
+			if self.exitapp[0]:
+				return
 
 	def init_callbacks(self):
 		@self.sio.event
