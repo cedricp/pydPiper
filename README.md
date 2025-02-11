@@ -2,19 +2,24 @@
 
 The original project is located at https://github.com/dhrone/pydPiper
 This repo tries to make work Volumio 3 with a HD44780 16x2 lines (for my need)
+Winstar OLED 16x2 also reported as working
 I removed the docker system to make it lightweight
 
 ## How to install
 
 You'll need python3 and some of its components :
+
 * `sudo apt-get install python3 python3-pip`
 * `pip3 install -r requirements.txt`
 * clone this project in /home/volumio
+
 test it with
+
 `cd ~/pydPiper`
+
 `python3 -m app.pydPiper`
 
-to auto start the module, copy `pydpiper`.service to `/etc/systemd/system`
+to auto start the module, copy `pydpiper.service` to `/etc/systemd/system`
 reload systemctl :
 `systemctl daemon-reload`
 start the service :
@@ -22,22 +27,24 @@ start the service :
 check with :
 `systemctl status pydpiper.service`
 
-# pydPiper ![splash](displays/images/pydPiper_splash.png)
+# pydPiper ![splash](app/displays/images/pydPiper_splash.png)
+
 A python program written for the Raspberry Pi that controls small LCD and OLED screens for music distributions like Volumio, MoodeAudio, and Max2Play.
 
-![Playing Example](displays/images/example_playing_album.png)![Time Temp Example](displays/images/example_time.png)
+![Playing Example](app/displays/images/example_playing_album.png)![Time Temp Example](app/displays/images/example_time.png)
 
 ## Features
-  * Supports multiple music distributions including Volumio (v1 and v2), MoodeAudio, and Max2Play
-	* Runs inside a Docker container to increase stability.  This decouples pydPiper from the distribution you run it on.
-  * Screens are fully user definable
-  * Supports a rich set of system and environmental variables including local weather
-  * Compatible with the Winstar WEH and WEG OLED displays
-  * Compatible with HD44780 style LCD displays (both I2C and Parallel interface)
-	* Compatible with SSD1306 style displays (I2C only)
-  * Fully graphics based in its backend allowing any arbritrary font, character set, or image to be displayed if the hardware supports it.
-	* For LCD character based displays will dynamically generate custom characters to support characters missing from the font table.  This feature can also be used to display some graphical content on character-based displays though this is limited by the small amount of memory available for customer characters on HD44780 based displays.
-  * NEW! A configure function is not included to allow pydPiper to easily be set up for different displays and music distributions
+
+* Supports multiple music distributions including Volumio (v1 and v2), MoodeAudio, and Max2Play
+  * Runs inside a Docker container to increase stability.  This decouples pydPiper from the distribution you run it on.
+* Screens are fully user definable
+* Supports a rich set of system and environmental variables including local weather
+* Compatible with the Winstar WEH and WEG OLED displays
+* Compatible with HD44780 style LCD displays (both I2C and Parallel interface)
+  * Compatible with SSD1306 style displays (I2C only)
+* Fully graphics based in its backend allowing any arbritrary font, character set, or image to be displayed if the hardware supports it.
+  * For LCD character based displays will dynamically generate custom characters to support characters missing from the font table.  This feature can also be used to display some graphical content on character-based displays though this is limited by the small amount of memory available for customer characters on HD44780 based displays.
+* NEW! A configure function is not included to allow pydPiper to easily be set up for different displays and music distributions
 
 ## Display configuration
 
@@ -78,8 +85,9 @@ This simple example will display the artist on the top line and the title on the
 
 Standard display configurations are available
 
+
 | page file           | Appropriate for       |
-| ------------------- | --------------------- |
+| --------------------- | ----------------------- |
 | pages_weh_80x16.py  | Winstar WEH displays  |
 | pages_weg_100x16.py | Winstar WEG displays  |
 | pages_lcd_16x2.py   | HD44780 16x2 displays |
@@ -90,6 +98,7 @@ Standard display configurations are available
 These instructions provide a general description of what you need to do in order to get pydPiper up and running on your system.  Instructions specific to individual music distributions will eventually be provided in the docs directory.
 
 #### Step 1.  Download pydPiper to your system
+
 Log in to your system and issue the following commands to download the software and place it within your home directory.  If you prefer to place it somewhere else, modify the location you untar it from accordingly.
 
 ```
@@ -99,12 +108,12 @@ cd pydPiper-0.3-alpha
 ```
 
 #### Step 2.  Edit the pydpiper.service file
+
 A systemctl services file has been provided with examples for several different popular configurations.  You will need to enable the appropriate ExecStart line for your particular configuration.  You do this by removing the '#' character at the start of the line for the ExecStart that is appropriate.  It is possible that you will also need to edit some of the values for the ExecStart command if your configuration is different than what was provided.
 
 IMPORTANT:  There must be one and only one ExecStart enabled within the file.
 
 The general format for the ExecStart lines is as follows:
-
 
 `ExecStart=/usr/bin/docker run --network=host --privileged -v /var/log:/var/log:rw dhrone/pydpiper:latest python /app/pydPiper.py --<musicdistro> --driver <driver> --width <width> --height <height> --i2caddress <i2caddress> --i2cport <i2cport> --rs <rs> --e <e> --d4 <d4> --d5 <d5> --d6 <d6> --d7 <d7> --timezone <timezone> --temperature <temperature> --lmsplayer <lmsplayer> --pages <pagefile>`
 
@@ -135,10 +144,10 @@ wapi -- weather underground API key.  Go to https://www.wunderground.com/weather
 wlocale -- location to pull weather for.  General format is Zipcode, State/City, Country/City, or Latitude,Longitude (e.g. '20001', 'CA/San_Francisco', 'France/Paris', '37.77,-122.39').
 
 Page files have been created for
-  HD44780 style LCDs (16x2 and 20x4 dimensions) -- pages_lcd_16x2.py, pages_lcd_20x4.py
-  Winstar WEH style OLEDs (16x2 dimensions) -- pages_weh_80x16.py
-  Winstar WEG style OLEDS (100x16 pixel dimensions) -- pages_weg_100x16.py
-  SSD1306 style OLEDs (128x64 pixel dimensions) -- pages_ssd1306.py
+HD44780 style LCDs (16x2 and 20x4 dimensions) -- pages_lcd_16x2.py, pages_lcd_20x4.py
+Winstar WEH style OLEDs (16x2 dimensions) -- pages_weh_80x16.py
+Winstar WEG style OLEDS (100x16 pixel dimensions) -- pages_weg_100x16.py
+SSD1306 style OLEDs (128x64 pixel dimensions) -- pages_ssd1306.py
 
 <pagefile> -- The name of the pages file to use for your display
 
@@ -157,8 +166,8 @@ There is a provided install script (install.sh) which will finish the installati
 ```
 sudo ./install.sh
 ```
-It will install the Docker engine onto your system, pull down the latest pydPiper docker image, and then configure systemd to enable pydPiper on system start.
 
+It will install the Docker engine onto your system, pull down the latest pydPiper docker image, and then configure systemd to enable pydPiper on system start.
 
 ## History
 
@@ -167,7 +176,6 @@ Version 0.251 (Alpha). Fixed Unicode bug in LMS driver.
 Version 0.25 (Alpha). Added support for HD44780 style LCD displays.
 Version 0.21 (Alpha). Minor bug fixes.
 Version 0.2 (Alpha).  Initial testing release.
-
 
 ## Credits
 
