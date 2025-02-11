@@ -228,7 +228,7 @@ class musicdata_volumio3(musicdata_volumiobase):
 			self.on_queue_response(data)
 
 		@self.sio.event
-		def disconnect(self):
+		def disconnect():
 			print('disconnected from server')
 	
 
