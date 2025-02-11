@@ -190,7 +190,7 @@ class musicdata_volumio3(musicdata_volumiobase):
 		print("Connected to Volumio Web Service")
 		# Try to keep connection alive
 		while 1:
-			self.sio.connect(f"http://{self.server}:{self.port}")
+			self.sio.connect(f"http://{self.server}:{self.port}", retry=True)
 			if self.sio.connected:
 				logging.info("Connected to Volumio3")
 			while self.sio.connected:
