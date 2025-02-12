@@ -8,10 +8,12 @@ I removed the docker system to make it lightweight
 ## How to install
 
 You'll need python3 and some of its components :
-
-* `sudo apt-get install python3 python3-pip`
-* `pip3 install -r requirements.txt`
+* Install necessary packages
+`sudo apt-get install python3 python3-pip netcat`
 * clone this project in /home/volumio
+* Install python modules
+`cd ~/volumio/pydPiper`
+`pip3 install -r requirements.txt`
 
 test it with
 
@@ -20,12 +22,15 @@ test it with
 `python3 -m app.pydPiper`
 
 to auto start the module, copy `pydpiper.service` to `/etc/systemd/system`
+
 reload systemctl :
 `systemctl daemon-reload`
 start the service :
 `systemctl start pydpiper.service`
 check with :
 `systemctl status pydpiper.service`
+Enable it at startup :
+`systemctl enable pydpiper.service`
 
 # pydPiper ![splash](app/displays/images/pydPiper_splash.png)
 

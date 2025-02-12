@@ -3,7 +3,8 @@ Description=LCD server for music player
 
 [Service]
 # Command to execute when the service is started
-ExecStartPre=/bin/sleep 30
+# Wait port 3000 to be available
+ExecStartPre=/bin/sh -c "while ! /bin/nc -z localhost 3000 ; do sleep 1 ; done"
 ExecStart=/usr/bin/python3 -m app.pydPiper
 WorkingDirectory=/home/volumio/pydPiper
 User=volumio
