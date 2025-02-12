@@ -268,14 +268,14 @@ if __name__ == u'__main__':
 
 	import moment, getopt
 
-	logging.basicConfig(format=u'%(asctime)s:%(levelname)s:%(message)s', filename=u'musicdata_volumio2.log', level=logging.DEBUG)
+	logging.basicConfig(format=u'%(asctime)s:%(levelname)s:%(message)s', filename=u'musicdata_volumio.log', level=logging.DEBUG)
 	logging.getLogger().addHandler(logging.StreamHandler())
 	logging.getLogger(u'socketIO-client').setLevel(logging.WARNING)
 
 	try:
 		opts, args = getopt.getopt(sys.argv[1:],u"hs:p:",[u"server=",u"port="])
 	except getopt.GetoptError:
-		print (u'musicdata_volumio2.py -s <server> -p <port>')
+		print (u'musicdata_volumio.py -s <server> -p <port>')
 		sys.exit(2)
 
 	# Set defaults
@@ -285,7 +285,7 @@ if __name__ == u'__main__':
 
 	for opt, arg in opts:
 		if opt == u'-h':
-			print (u'musicdata_volumio2.py -s <server> -p <port>')
+			print (u'musicdata_volumio.py -s <server> -p <port>')
 			sys.exit()
 		elif opt in (u"-s", u"--server"):
 			server = arg
